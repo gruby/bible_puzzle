@@ -1,0 +1,39 @@
+p {
+  font-size: 3vh;
+  padding: 5vw;
+  line-height: 2;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: 60% 30% 10%;
+  height: 100vh;
+  width: 100%;
+}
+
+#verse {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  display: flex; 
+}
+
+#missingWord {
+  display: flex;
+  background: rgb(210, 240, 240);
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+#address {
+  display: flex;
+  background: rgb(210, 240, 240);
+  width: 60%;
+  justify-content: right;
+  align-items: center;
+}
