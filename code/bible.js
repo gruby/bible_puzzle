@@ -33,7 +33,8 @@ let returnBibleAddress = (coordinates) => {
 
 let getRandomVerse = () => {
   let coordinates = ""
-  let book = fairBook();
+  let book = 23;
+  //let book = fairBook();
   let chapter = ( Math.floor(Math.random() *newTestament.books[book].chapters.length ) );
   let verse = ( Math.floor(Math.random() *newTestament.books[book].chapters[chapter].verses.length ) );
   coordinates = coordinates + book + "," + chapter + "," + verse;
@@ -88,58 +89,58 @@ let fairBook = () => {
   let book = Math.floor(Math.random() *260 );
 
   if (book < 28) {
-    return 0;
+    return 0;//MATTHEW
   } else if (book < 44) {
-    return 1;
+    return 1;//MARK
   } else if (book < 68) {
-    return 2;
+    return 2;//LUKE
   } else if (book < 89) {
-    return 3;
+    return 3;//JOHN
   } else if (book < 117) {
-    return 4;
+    return 4;//ACTS
   } else if (book < 133) {
-    return 5;
+    return 5;//ROMANS
   } else if (book < 149) {
-    return 6;
+    return 6;//1 CORINTHIANS
   } else if (book < 162) {
-    return 7;
+    return 7;//2 CORINTHIANS
   } else if (book < 168) {
-    return 8;
+    return 8;//GALATIANS
   } else if (book < 174) {
-    return 9;
+    return 9;//EPHESIANS
   } else if (book < 178) {
-    return 10;
+    return 10;//PHILIPPIANS
   } else if (book < 182) {
-    return 11;
+    return 11;//COLLOSIANS
   } else if (book < 187) {
-    return 12;
+    return 12;//1 THESSALONIANS
   } else if (book < 190) {
-    return 13;
+    return 13;//2 THESSALONIANS
   } else if (book < 196) {
-    return 14;
+    return 14;//1 TIMOTHY
   } else if (book < 200) {
-    return 15;
+    return 15;//2 TIMOTHY
   } else if (book < 203) {
-    return 16;
+    return 16;//TITUS
   } else if (book < 204) {
-    return 17;
+    return 17;//PHILEMON
   } else if (book < 217) {
-    return 18;
+    return 18;//HEBREWS
   } else if (book < 222) {
-    return 19;
+    return 19;//JAMES
   } else if (book < 227) {
-    return 20;
+    return 20;//1 PETER
   } else if (book < 230) {
-    return 21;
+    return 21;//2 PETER
   } else if (book < 235) {
-    return 22;
+    return 22;//1 JOHN
   } else if (book < 236) {
-    return 23;
+    return 23;//2 JOHN
   } else if (book < 237) {
-    return 24;
+    return 24;//3 JOHN
   } else if (book < 238) {
-    return 25;
+    return 25;//JUDE
   } else {
-    return 26;
+    return 26;//REVELATIONS
   }
 }
