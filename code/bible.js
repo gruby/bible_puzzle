@@ -33,8 +33,8 @@ let returnBibleAddress = (coordinates) => {
 
 let getRandomVerse = () => {
   let coordinates = ""
-  let book = 23;
-  //let book = fairBook();
+  //let book = 23;
+  let book = fairBook();
   let chapter = ( Math.floor(Math.random() *newTestament.books[book].chapters.length ) );
   let verse = ( Math.floor(Math.random() *newTestament.books[book].chapters[chapter].verses.length ) );
   coordinates = coordinates + book + "," + chapter + "," + verse;
